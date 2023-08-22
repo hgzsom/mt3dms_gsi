@@ -18,7 +18,7 @@ C
 C  ACCESS specifier --
 C
 C    Standard Fortran -- Use unless there is a reason to do otherwise.
-      DATA ACCESS/'SEQUENTIAL'/
+      DATA ACCESS/'STREAM'/
 C
 C    Non-standard Fortran that causes code compiled by Lahey LF90 
 C    or Absoft Fortran to use unstructured non-formatted
@@ -31,14 +31,14 @@ C  FORM specifier --
 C
 C    Standard Fortran, which results in vender dependent (non-portable)
 C    files.  Use unless there is a reason to do otherwise.
-C     DATA FORM/'UNFORMATTED'/           
+      DATA FORM/'UNFORMATTED'/         
 C
 C    Non-standard Fortran that causes code compiled by Compaq Visual
 C    Fortran or Lahey Fortran 95 to use unstructured non-formatted
 C    files.  This may make it possible for the non-formatted files used
 C    by MT3DMS to be used with programs that are compiled by other
 C    compilers.
-      DATA FORM/'BINARY'/
+C      DATA FORM/'BINARY'/
 C
 C
 C  OPEN-statement specifiers related to file-sharing.
